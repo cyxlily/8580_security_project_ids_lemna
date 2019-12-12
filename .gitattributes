@@ -1,1 +1,3 @@
 *.ipynb linguist-language=Python
+*.o* linguist-language=Python
+*.csv linguist-language-Python
