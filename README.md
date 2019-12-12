@@ -39,46 +39,47 @@ May need other packages, just run "pip install package_name" if required.
 
 
 ## Usage:
-1. download the project using Unix command line:
+* download the project using Unix command line:
        
         $ git clone https://github.com/cyxlily/8580_security_project_ids_lemna.git
        
         $ cd 8580_security_project_ids_lemna
 
 
-2. The processed ids dataset is in the folder 'data', including X_test_binary.csv ,Y_test_binary.csv and unique_tokens.csv. The trained model is in the folder 'model',  named binary_protobytes_dirty.h5. The codes is in the folder 'code'.
+* The processed ids dataset is in the folder 'data', including X_test_binary.csv ,Y_test_binary.csv and unique_tokens.csv. The trained model is in the folder 'model',  named binary_protobytes_dirty.h5. The codes is in the folder 'code'.
 
 
-3.You can run LEMNA using Unix command line:
+* You can run LEMNA using Unix command line:
        
         $ cd code
         
         $ python lemna_replication.py --f=5
-         
-    
-4. To run codes automatically, you can using command line:
+
+
+* To run codes automatically, you can using command line:
     
         $ qsub lemnaids5.pbs
         
         $ Remember to change the root file path.
 
 
-
-5. You can train the IDS model yourself. IDS related codes are in the folder 'IDS'. You can train the IDS model using command line:
+* You can train the IDS model yourself. IDS related codes are in the folder 'IDS'. You can train the IDS model using command line:
         
         $ cd IDS
         
         $ python train_binary.py
-        
+
 The trained model is in the folder 'models',named binary_protobytes_dirty.h5
-        
-6. You can test the IDS model using command line:
+
+
+* You can test the IDS model using command line:
         
         $ python test_binary.py
        
 The evaluation results is report.txt, report.csv, val.png
-        
-7. You can also process the datasets yourself. First download the raw datasets in the folder 'data'. The share link is 
+
+
+* You can also process the datasets yourself. First download the raw datasets in the folder 'data'. The share link is 
     
         https://drive.google.com/open?id=1pi3SluBlec_g1SexyYDPM7HMm5Z6y4uh
     
