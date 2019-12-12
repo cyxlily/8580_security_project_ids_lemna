@@ -60,7 +60,7 @@ May need other packages, just run "pip install package_name" if required.
     
         $ qsub lemnaids5.pbs
         
-        $ Remember to change the root file path.
+Remember to change the root file path.
 
 
 * You can train the IDS model yourself. IDS related codes are in the folder 'IDS'. You can train the IDS model using command line:
