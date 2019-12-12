@@ -45,6 +45,7 @@ May need other packages, just run "pip install package_name" if required.
        
         $ cd 8580_security_project_ids_lemna
 
+
 2. The processed ids dataset is in the folder 'data', including X_test_binary.csv ,Y_test_binary.csv and unique_tokens.csv. The trained model is in the folder 'model',  named binary_protobytes_dirty.h5. The codes is in the folder 'code'.
 
 
@@ -69,24 +70,24 @@ May need other packages, just run "pip install package_name" if required.
         
         $ python train_binary.py
         
-        The trained model is in the folder 'models',named binary_protobytes_dirty.h5
+The trained model is in the folder 'models',named binary_protobytes_dirty.h5
         
 6. You can test the IDS model using command line:
         
         $ python test_binary.py
        
-        The evaluation results is report.txt, report.csv, val.png
+The evaluation results is report.txt, report.csv, val.png
         
 7. You can also process the datasets yourself. First download the raw datasets in the folder 'data'. The share link is 
     
         https://drive.google.com/open?id=1pi3SluBlec_g1SexyYDPM7HMm5Z6y4uh
     
-        Unzip the raw dataset using command line:
+Unzip the raw dataset using command line:
         
         $ unzip labeled_flows_xml.zip
         
-        Process the raw datasets by usign command line:
+Process the raw datasets by usign command line:
        
         $ python generate_binary.py
         
-        The datasets are X_train_binary.csv, X_test_binary.csv, Y_train_binary.csv, Y_test_binary.csv, unique_tokens.csv
+The datasets are X_train_binary.csv, X_test_binary.csv, Y_train_binary.csv, Y_test_binary.csv, unique_tokens.csv
